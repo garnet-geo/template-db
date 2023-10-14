@@ -2,6 +2,9 @@
 
 Dolt database backup with some simple spatial data for testing purposes.
 
+You can view and test this data at demo server `db.garnet-geo.org:3306`.
+For GDAL use, you can configure all connection string as `MYSQL:"dolt,host=db.garnet-geo.org,port=3306,user=root"`
+
 ## Restoring backup
 
 You can restore it from backup by running following command in repository directory:
