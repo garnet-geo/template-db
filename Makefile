@@ -12,6 +12,6 @@ backup:
 	dolt backup sync local
 
 restore:
-	dolt backup restore local
+	dolt backup restore file://$(shell pwd)/backup .
 
 .PHONY: import-vector add-backup backup restore
