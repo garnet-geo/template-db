@@ -8,4 +8,7 @@ backup:
 restore:
 	dolt backup restore file://$(shell pwd)/backup .
 
-.PHONY: import-vector add-backup backup restore
+start-server:
+	dolt sql-server -r
+
+.PHONY: import-vector add-backup backup restore start-server

@@ -1,4 +1,4 @@
-FROM dolthub/dolt:1.34.0
+FROM dolthub/dolt:1.35.4
 
 COPY backup backup
 RUN dolt backup restore file://$(pwd)/backup .

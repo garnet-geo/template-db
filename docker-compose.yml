@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  template-db:
+    image: ghcr.io/garnet-geo/template-db:main
+    ports:
+      - 3306:3306
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 21600
